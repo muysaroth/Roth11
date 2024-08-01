@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Tailwind</title>
+  </head>
+  <body>
+    <!-- Mobile Navbar -->
+    <header
+      class="md:hidden fixed w-screen py-4 border-b-[1px] flex justify-center bg-sky-300 z-10"
+    >
+      <button class="absolute top-1/2 -translate-y-1/2 left-4 text-xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#">
+        <img src="/public/img/logo.png" alt="logo" class="w-56" />
+      </a>
+    </header>
+    <!-- End Mobile Navbar -->
+    <!-- big Navbar -->
+    <!-- End big Navbar -->
+    <header
+      class="hidden md:flex justify-between items-center py-3 px-40 border-b-[1px] bg-sky-300 fixed w-screen"
+    >
+      <div class="flex items-center gap-5">
+        <a href="#"
+          ><img src="/public/img/logo.png" alt="logo" class="w-56"
+        /></a>
+      </div>
+      <ul class="flex gap-5 text-[16px] items-center cursor-pointer text-black ">
+        <li class="hover:text-pink-500">Home</li>
+        <li class="hover:text-pink-500">
+          <a href="#" class="">Product</a>
+          <ul class="hidden ">
+            <li><a href="#">All Category</a></li>
+            <li><a href="#">Khmer Scarf</a></li>
+            <li><a href="#">Wood carvings</a></li>
+            <li><a href="#">Processed products</a></li>
+            <li><a href="#">Palm tree</a></li>
+          </ul>
+        </li>
+        <li class="hover:text-pink-500"><a href="#">About</a></li>
+        <li>
+          <a href="#" class="hover:text-pink-500">Contact</a>
+        </li>
+      </ul>
+      <div class="flex items-center gap-5 cursor-pointer">
+        <i class="fa-solid fa-cart-shopping hover:text-pink-500"></i>
+        <i class="fa-regular fa-heart hover:text-pink-500"></i>
+      </div>
+    </header>
+    <!-- Home -->
+    <div class="​​​​​ flex justify-around items-center mb-8 ">
+      <div class="mt-20 py-24">
+        <h1 class="font-bold lg:text-5xl min-[320px]:text-3xl max-[600px] text-pink-500 leading-[4rem]">
+          Beautiful <br />
+          <span class="text-black">and good quality.</span>
+        </h1>
+        <p class="text-gray-600 text-[20px]">
+          Deliver to any corner of the city.
+        </p>
+        <a href="#"
+          ><button
+            class="bg-pink-500 py-2 px-4 rounded-3xl border-none outline-none hover:bg-black text-white uppercase mt-20"
+          >
+            Pick A item
+          </button></a
+        >
+      </div>
+      <div>
+        <img src="/public/img/Profile.png" alt="profie" class="mt-8 lg:w-[300px] min-[320px]:w-[200px] max-[600px]" />
+      </div>
+    </div>
+    <!-- New Product -->
+    <section class="mt-24">
+      <h1
+        class="text-center font-bold lg:text-3xl min-[320px]:text-2xl max-[600px] text-pink-500 mb-14 mt-11 bg-pink-200 p-3"
+      >
+        New Arrival Product
+      </h1>
+      <div class="grid grid-cols-4 gap-7 items-center mx-10">
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/new/banner5.jfif" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] "> Souvenirs</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px]  text-gray-500">$2.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/new/banner6.jfif" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">Khmer Scarf</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px]  text-gray-500">$5.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img
+            src="/public/img/new/Product (5).jfif"
+            alt=""
+            class="w-[250px]"
+          />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">Khmer Hat</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px]  text-gray-500">$5.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img
+            src="/public/img/new/Product (1).jfif"
+            alt=""
+            class="w-[250px]"
+          />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">Khmer Scarf</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px]  text-gray-500">$5.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img
+            src="/public/img/new/Product (8).jfif"
+            alt=""
+            class="w-[250px]"
+          />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">palm leaves</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px]  text-gray-500">
+            $10.00
+          </h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img
+            src="/public/img/new/Product (10).jfif"
+            alt=""
+            class="w-[250px]"
+          />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">palm leaves</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px]  text-gray-500">$8.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img
+            src="/public/img/new/Product (6).jfif"
+            alt=""
+            class="w-[250px]"
+          />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">palm leaves</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px]  text-gray-500">$6.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img
+            src="/public/img/new/Product (4).jfif"
+            alt=""
+            class="w-[250px]"
+          />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">Khmer Scarf</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px]  text-gray-500">$7.00</h5>
+        </div>
+      </div>
+    </section>
+    <!-- Top Product -->
+    <section class="">
+      <h1
+        class="text-center font-bold lg:text-3xl min-[320px]:text-2xl max-[600px] text-pink-500 mb-14 mt-10 bg-pink-200 p-3"
+      >
+        Top Product
+      </h1>
+      <div class="grid grid-cols-4 gap-7 items-center mx-10">
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/top/top1.jpg" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">Khmer scarf</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px] text-gray-500">$2.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/top/top2.jpg" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px]">Khmer Scarf</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px] text-gray-500">$5.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/top/top3.jpg" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">Khmer Hat</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px] text-gray-500">$5.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/top/top4.jpg" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px]">Khmer Scarf</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px] text-gray-500">$5.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/top/top5.jpg" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px] ">palm leaves</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px] text-gray-500">
+            $10.00
+          </h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/top/top6.jpg" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px]">palm leaves</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px] text-gray-500">$8.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/top/top7.jpg" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px]">palm leaves</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px] text-gray-500">$6.00</h5>
+        </div>
+        <div class="cursor-pointer text-center font-bold uppercase">
+          <img src="/public/img/top/top8.jpg" alt="" class="w-[250px]" />
+          <h4 class="lg:text-xl min-[320px]:text-[10px] max-[600px]">Khmer Scarf</h4>
+          <h5 class="lg:text-xl min-[320px]:text-[10px] max-[600px] text-gray-500">$7.00</h5>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+     <section>
+      <div class="bg-black text-white text-center p-4 mt-20 lg:text-[16px] min-[320px]:text-[12px] max-[600px]">
+        <p>&#169 Muy Saroth BIU. All Right Reserved</p>
+      </div>
+     </section>
+  </body>
+</html>
